@@ -1,0 +1,12 @@
+---
+description: Coordinated changes for astro.config.mjs and src/content.config.ts in Dusk
+globs: astro.config.mjs
+alwaysApply: false
+---
+
+# Astro config ↔ content config
+
+- **`astro.config.mjs`:** `site` drives absolute URLs (sitemap, RSS `context.site`, etc.). Changing the production domain should include this file and any hard-coded SEO URLs in `src/components/fundations/head/Seo.astro` (and related meta).
+- **`src/content.config.ts`:** Adding/removing a collection or changing entry `loader` paths requires **new or updated routes** under `src/pages/` and any `getCollection("…")` usage (schedule, search, layouts).
+- **Integrations:** `integrations` currently include `sitemap()` and `mdx()`. Do not add integrations in config without adding the matching dependency in `package.json`.
+- When editing **both** files for one feature (e.g. new collection + build behavior), keep the change set minimal and verify all `getCollection` call sites still type-check.

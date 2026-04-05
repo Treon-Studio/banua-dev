@@ -1,0 +1,12 @@
+---
+description: Zod collections schema edits — coordinate with pages and astro site/config
+globs: src/content.config.ts
+alwaysApply: false
+---
+
+# `src/content.config.ts`
+
+- Treat schema changes as **API changes** for `src/pages/**`, `src/layouts/**`, and components that call `getCollection` / `getEntry` (e.g. schedule, search, cards).
+- **`image()` in schema:** Keep `posts`, `speakers`, and `sponsors` image fields compatible with how layouts render `entry.data` (do not remove `url`/`alt` expectations without updating consumers).
+- **Loaders:** `glob({ base: "./src/content/<folder>" })` must stay aligned with actual markdown locations and collection keys in `collections`.
+- Pair domain/site behavior with `astro.config.mjs` (`site`) when URLs or RSS/sitemap output depend on it.

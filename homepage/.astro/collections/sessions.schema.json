@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "abstract": {
+      "type": "string",
+      "minLength": 40
+    },
+    "speakers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "day": {
+      "type": "string",
+      "enum": [
+        "day-1",
+        "day-2",
+        "day-3",
+        "day-4",
+        "day-5",
+        "day-6",
+        "day-7"
+      ]
+    },
+    "start": {
+      "type": "string"
+    },
+    "end": {
+      "type": "string"
+    },
+    "room": {
+      "type": "string"
+    },
+    "track": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ]
+    },
+    "tags": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "abstract",
+    "speakers",
+    "day",
+    "start",
+    "end",
+    "room",
+    "tags"
+  ],
+  "additionalProperties": false
+}

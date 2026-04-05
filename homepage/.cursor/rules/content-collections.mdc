@@ -1,0 +1,13 @@
+---
+description: Content collections, Zod schemas, frontmatter, and image() paths for Dusk
+globs: src/content/**
+alwaysApply: false
+---
+
+# Content under `src/content/`
+
+- **Schemas live in** `src/content.config.ts`. Collections: `infopages`, `posts`, `speakers`, `sessions`, `sponsors` — use these keys with `getCollection` / `getEntry`.
+- **`image()` fields:** For `posts` (`image.url`), `speakers` (`headshot.url`), and `sponsors` (`logo.url`), use paths that work with Astro’s content image helper — follow existing entries (e.g. `/src/images/blog/…`, `/src/images/speakers/…`, `/src/images/sponsors/…`). Do not break `image()` by switching to arbitrary remote URLs unless the schema and pages are updated to match.
+- **Cross-references:** `sessions.speakers` and `speakers.talks` must reference **entry ids** (Markdown filename without `.md`), e.g. `sofia-hagblom`, `modular-design-systems`.
+- **Frontmatter examples:** Copy shape from real files: `src/content/posts/1.md`, `src/content/infopages/terms.md`, `src/content/speakers/anna-muller.md`, `src/content/sessions/color-theory.md`, `src/content/sponsors/google.md`.
+- Do **not** relax or extend Zod fields without updating consuming Astro pages and layouts that assume the current shape.

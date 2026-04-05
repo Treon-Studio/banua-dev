@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "tier": {
+      "default": "bronze",
+      "type": "string",
+      "enum": [
+        "platinum",
+        "gold",
+        "silver",
+        "bronze"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^(https?:\\/\\/|#_)"
+    },
+    "logo": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "tier",
+    "url",
+    "logo"
+  ],
+  "additionalProperties": false
+}

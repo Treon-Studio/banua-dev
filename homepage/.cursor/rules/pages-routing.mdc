@@ -1,0 +1,13 @@
+---
+description: Dusk file-based routes, dynamic segments, and layout usage in src/pages
+globs: src/pages/**
+alwaysApply: false
+---
+
+# `src/pages/` routing
+
+- **Dynamic routes:** `[...slug].astro` maps **content entry id** to URL segment — blog posts `/blog/posts/{slug}`, infopages `/infopages/{slug}`, speakers `/speakers/profile/{slug}`, sessions `/sessions/workshop/{slug}`, sponsors `/sponsors/details/{slug}`.
+- **Blog tags:** `/blog/tags/[tag].astro` — `tag` must exist in post frontmatter `tags` arrays.
+- **Layouts:** Pages that render collections should pass `entry.data` (or equivalent) into the same layout components the sibling routes use (`BlogLayout`, `InfoPagesLayout`, etc.); avoid duplicating shell markup that `BaseLayout` already provides.
+- **Static pages** (e.g. `schedule.astro`, `index.astro`, `forms/*.astro`) use `BaseLayout` directly unless they intentionally use another shell.
+- When adding a new route, match existing URL patterns used in `Navigation.astro`, `Footer.astro`, `Search.astro`, and card components so links stay consistent.

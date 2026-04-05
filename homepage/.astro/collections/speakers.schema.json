@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "headshot": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "location": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "socials": {
+      "type": "object",
+      "properties": {
+        "twitter": {
+          "type": "string",
+          "pattern": "^(https?:\\/\\/|#_)"
+        },
+        "github": {
+          "type": "string",
+          "pattern": "^(https?:\\/\\/|#_)"
+        },
+        "linkedin": {
+          "type": "string",
+          "pattern": "^(https?:\\/\\/|#_)"
+        },
+        "website": {
+          "type": "string",
+          "pattern": "^(https?:\\/\\/|#_)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "talks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "featured": {
+      "default": false,
+      "type": "boolean"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "featured"
+  ],
+  "additionalProperties": false
+}
