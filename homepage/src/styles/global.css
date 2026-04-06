@@ -2,10 +2,21 @@
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
 @plugin "tailwind-scrollbar-hide";
+
+@font-face {
+  font-family: "Departure Mono";
+  src: url("/fonts/DepartureMono-Regular.woff2") format("woff2"),
+       url("/fonts/DepartureMono-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   /* Typography */
   --font-sans: "General Sans", sans-serif;
   --font-display: "Clash Display", sans-serif;
+  --font-mono: "Departure Mono", monospace;
   /* Black */
   --color-black: oklch(0.129 0 0);
   /* Accent */
