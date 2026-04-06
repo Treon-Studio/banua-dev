@@ -9,35 +9,35 @@ import Button from "@/components/fundations/elements/Button.astro";
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 const spaces = [
   {
-    title: "Helvetica Hall",
+    title: "Main Hall",
     description:
-      "Main stage for keynotes and evening salons. Seating for 600 with theatre-grade acoustics, dual projection, and real-time captioning in English and French.",
+      "Ruang utama untuk meetup dan talk. Kapasitas 100+ orang dengan proyektor, sound system, dan live streaming setup.",
   },
   {
-    title: "Modulor Studio",
+    title: "Workshop Room",
     description:
-      "Hands-on workshop floor with modular stations, tactile prototyping materials, and dedicated critique walls sized for Swiss poster formats.",
+      "Ruang workshop dengan meja dan kursi yang bisa diatur fleksibel. Tersedia whiteboard, monitor, dan koneksi internet cepat.",
   },
   {
-    title: "Ratio Lab",
+    title: "Networking Area",
     description:
-      "Residency wing for teams. Includes private breakout rooms, A/V-equipped boardrooms, and a materials library curated by Gridline Labs.",
+      "Area santai untuk networking dan diskusi informal. Tersedia kopi, snack, dan suasana yang nyaman untuk ngobrol.",
   },
 ];
 const transit = [
-  "Orange Line metro — Place-d'Armes station (5-minute walk)",
-  "STM bus routes 55 and 361 stop at Saint-Paul / Saint-Sulpice",
-  "747 Airport Shuttle connects YUL to downtown Montreal",
+  "Tersedia parkir motor dan mobil di area venue",
+  "Akses mudah dari transportasi umum",
+  "Lokasi strategis di pusat kota",
 ];
 const accessibility = [
-  "Step-free access and elevators across all levels",
-  "Reserved seating zones and low-vision guides in keynotes",
-  "Assistive listening devices and speech-to-text upon request",
+  "Akses ramah disabilitas",
+  "Toilet dan fasilitas lengkap",
+  "AC dan ventilasi yang baik",
 ];
 const nearbyStays = [
-  "Hotel Monochrome (design-forward boutique, 3-minute walk)",
-  "Gridline Suites (serviced apartments for teams, 5-minute walk)",
-  "Old Port Residences (extended stay, 8-minute walk)",
+  "Berbagai pilihan hotel dan penginapan di sekitar venue",
+  "Akses mudah ke restoran dan cafe",
+  "Area parkir yang luas",
 ];
 ---
 
@@ -46,24 +46,22 @@ const nearbyStays = [
     <Wrapper variant="standard" class="py-32">
       <header class="max-w-4xl space-y-4">
         <Text tag="p" variant="textXS" class="uppercase text-base-600">
-          Location
+          Lokasi
         </Text>
         <Text
           tag="h1"
           variant="displayMD"
           class="text-balance text-accent-500 font-display uppercase leading-tight mt-8"
         >
-          Montreal Design Centre
+          Venue Event
         </Text>
         <Text
           tag="p"
           variant="textBase"
           class="text-base-600 font-medium max-w-2xl mt-2 text-balance"
         >
-          Dusk inhabits the Montreal Design Centre, a brutalist landmark in Old
-          Montreal. Concrete, glass, and measured light make it the ideal canvas
-          for Swiss-inspired layouts, installations, and day-to-night
-          programming.
+          Event BanuaDev diadakan di berbagai lokasi di Indonesia. Venue dipilih
+          dengan pertimbangan akses, fasilitas, dan kenyamanan untuk semua peserta.
         </Text>
       </header>
       <section>
@@ -85,20 +83,20 @@ const nearbyStays = [
                 variant="textBase"
                 class="font-display uppercase text-accent-500"
               >
-                Address
+                Lokasi Utama
               </Text>
               <address
-                aria-label="Montreal Design Centre address"
+                aria-label="Venue address"
                 class="not-italic space-y-1"
               >
                 <Text tag="p" variant="textSM" class="text-base-600">
-                  417 Rue Saint-Paul Ouest
+                  Lokasi venue akan diumumkan
                 </Text>
                 <Text tag="p" variant="textSM" class="text-base-600">
-                  Montreal, QC H2Y 2A1
+                  sebelum setiap event
                 </Text>
                 <Text tag="p" variant="textSM" class="text-base-600">
-                  Canada
+                  Indonesia
                 </Text>
               </address>
             </div>
@@ -108,7 +106,7 @@ const nearbyStays = [
                 variant="textBase"
                 class="font-display uppercase text-accent-500"
               >
-                Transit
+                Akses
               </Text>
               <ul
                 class="text-base-600 text-sm divide-y divide-dashed divide-black/10"
@@ -122,7 +120,7 @@ const nearbyStays = [
                 variant="textBase"
                 class="font-display uppercase text-accent-500"
               >
-                Accessibility
+                Fasilitas
               </Text>
               <ul
                 class="text-base-600 text-sm divide-y divide-dashed divide-black/10"
@@ -136,7 +134,7 @@ const nearbyStays = [
                 variant="textBase"
                 class="font-display uppercase text-accent-500"
               >
-                Nearby stays
+                Sekitar Venue
               </Text>
               <ul
                 class="text-base-600 text-sm divide-y divide-dashed divide-black/10"
@@ -152,17 +150,16 @@ const nearbyStays = [
             variant="displaySM"
             class="text-balance text-accent-500 font-display uppercase leading-tight"
           >
-            A campus designed for focus
+            Ruang yang Nyaman untuk Belajar
           </Text>
           <Text
             tag="p"
             variant="textSM"
             class="text-base-600 font-medium max-w-2xl mt-2 text-balance"
           >
-            The centre spans three connected wings. Each is scaled for different
-            cadences—from keynote theatre to intimate critiques. Expect
-            thoughtful signage, quiet lounges, and generous circulation to keep
-            every session punctual.
+            Venue kami dirancang untuk mendukung berbagai format event, dari
+            talk session hingga hands-on workshop. Fasilitas lengkap untuk
+            memastikan pengalaman belajar yang optimal.
           </Text>
         </div>
         <div
@@ -195,14 +192,13 @@ const nearbyStays = [
             variant="displaySM"
             class="font-display uppercase text-white"
           >
-            Plan your visit
+            Info Event Selanjutnya
           </Text>
           <Text tag="p" variant="textSM" class="text-base-200 lg:text-balance">
-            Download the venue map, explore travel tips, and review the 2025
-            residency handbook before you arrive. Need a bespoke itinerary for
-            your studio? Email <a
+            Cek jadwal event terbaru dan daftar sekarang. Ada pertanyaan tentang
+            venue? Hubungi kami di <a
               class="underline"
-              href="mailto:care@dusk.design">care@dusk.design</a
+              href="mailto:hello@banuadev.com">hello@banuadev.com</a
             >.
           </Text>
         </div>
@@ -213,17 +209,17 @@ const nearbyStays = [
             size="sm"
             variant="default"
             class="w-fit"
-            href="/downloads/venue-map.pdf"
+            href="/schedule"
           >
-            Venue map
+            Lihat Jadwal
           </Button>
           <Button
             size="sm"
             variant="muted"
             class="w-fit"
-            href="/downloads/residency-handbook.pdf"
+            href="/forms/contact"
           >
-            Residency handbook
+            Hubungi Kami
           </Button>
         </div>
       </section>

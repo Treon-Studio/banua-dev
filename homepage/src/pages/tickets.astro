@@ -6,63 +6,63 @@ import Button from "@/components/fundations/elements/Button.astro";
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 const tiers = [
   {
-    name: "Virtual Pass",
-    price: "$0",
-    suffix: "digital access",
+    name: "Community Member",
+    price: "Gratis",
+    suffix: "akses dasar",
     description:
-      "Stream the keynotes from anywhere. Ideal for global teams who want the discourse without the travel footprint.",
+      "Bergabung dengan komunitas online. Akses Discord, Telegram, dan newsletter bulanan.",
     features: [
-      "Live broadcast of the main stage and closing synthesis",
-      "On-demand recordings available for 30 days",
-      "Moderated chat for Q&A with speakers",
+      "Akses Discord dan Telegram komunitas",
+      "Newsletter bulanan dengan update terbaru",
+      "Akses rekaman meetup dan workshop",
     ],
-    action: { label: "Join Virtual Pass", variant: "muted" },
-    note: "Registration required for access links",
+    action: { label: "Gabung Gratis", variant: "muted" },
+    note: "Registrasi diperlukan",
   },
   {
-    name: "Day Pass",
-    price: "$260",
-    suffix: "per attendee",
+    name: "Event Pass",
+    price: "Rp 50K",
+    suffix: "per event",
     description:
-      "Focus on the essential conversations. Perfect for independent designers aligning with a specific program day.",
+      "Ikuti meetup atau workshop offline. Cocok untuk yang ingin belajar topik spesifik.",
     features: [
-      "Main stage sessions and case-study theatre",
-      "Access to the typographic poster archive installation",
-      "Breakfast, coffee rituals, and evening aperitif",
+      "Akses ke satu event offline",
+      "Networking dengan peserta lain",
+      "Snack dan minuman",
     ],
-    action: { label: "Buy Day Pass", variant: "muted" },
+    action: { label: "Lihat Event", variant: "muted" },
   },
   {
-    name: "Studio Pass",
-    price: "$520",
-    suffix: "two-day access",
+    name: "Workshop Pass",
+    price: "Rp 150K",
+    suffix: "full day workshop",
     description:
-      "Immerse your practice in the full discourse. Two consecutive days of programming, critiques, and Swiss product labs.",
+      "Workshop intensif seharian dengan hands-on practice dan project nyata.",
     features: [
-      "All keynotes and workshop tracks for 48 hours",
-      "Priority seating in the interaction prototyping lab",
-      "Invitation to the Basel grid salon and night tour",
+      "Workshop full day (6-8 jam)",
+      "Materi dan resource lengkap",
+      "Sertifikat kehadiran",
     ],
-    action: { label: "Buy Studio Pass", variant: "default" },
+    action: { label: "Daftar Workshop", variant: "default" },
     highlight: true,
     tag: "Recommended",
   },
   {
-    name: "Team Residency",
-    price: "$1,920",
-    suffix: "4 designers",
+    name: "Annual Member",
+    price: "Rp 500K",
+    suffix: "per tahun",
     description:
-      "Bring the whole product team to Montreal. A week-long residency with space to work, reflect, and ship with intention.",
+      "Membership tahunan dengan akses ke semua event dan benefit eksklusif.",
     features: [
-      "Full-week access to every stage and atelier",
-      "Private critique session with Swiss mentors",
-      "Dedicated workspace within the design library",
+      "Akses gratis ke semua meetup",
+      "Diskon 50% untuk workshop",
+      "Akses eksklusif ke mentoring session",
     ],
     action: {
-      label: "Plan Your Residency",
+      label: "Jadi Member",
       variant: "muted",
     },
-    note: "Limited to 6 teams to preserve focus",
+    note: "Kuota terbatas",
   },
 ];
 ---
@@ -76,16 +76,15 @@ const tiers = [
           variant="displayMD"
           class="text-balance text-accent-500 font-display uppercase leading-tight"
         >
-          Tickets & access
+          Event & Membership
         </Text>
         <Text
           tag="p"
           variant="textBase"
           class="text-base-600 font-medium max-w-2xl mt-2 text-balance"
         >
-          Choose the cadence that suits your practice. Each tier is designed
-          with Swiss precision—clear structure, intentional pacing, and room to
-          collaborate with peers across product, interaction, and typography.
+          Pilih opsi yang sesuai dengan kebutuhanmu. Mulai dari akses gratis
+          ke komunitas online hingga membership tahunan dengan berbagai benefit.
         </Text>
       </div>
       <div
@@ -167,12 +166,12 @@ const tiers = [
         class="flex flex-wrap items-center justify-between gap-4 border-t border-black/10 pt-6"
       >
         <Text tag="p" variant="textXS" class="uppercase text-base-600">
-          Prices include materials & refreshments
+          Harga sudah termasuk materi & konsumsi
         </Text>
         <Text tag="p" variant="textXS" class="text-base-600">
-          Need guidance? <Button
+          Ada pertanyaan? <Button
             variant="link"
-            href="mailto:tickets@dusk.design">Email the Dusk team</Button
+            href="mailto:hello@banuadev.com">Hubungi tim BanuaDev</Button
           >
         </Text>
       </div>

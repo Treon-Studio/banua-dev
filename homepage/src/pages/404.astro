@@ -7,46 +7,46 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 
 const supportSections = [
   {
-    title: "Plan your visit",
+    title: "Jelajahi",
     links: [
       {
         label: "Sessions",
         href: "/sessions",
         description:
-          "Discover the full line-up of talks, ateliers, and residencies.",
+          "Lihat daftar lengkap workshop, talk, dan event yang tersedia.",
       },
       {
-        label: "Tickets",
+        label: "Event",
         href: "/tickets",
         description:
-          "Reserve your seat before the design week is fully booked.",
+          "Cek jadwal event dan daftar sebelum kuota penuh.",
       },
       {
-        label: "Journal",
+        label: "Blog",
         href: "/blog",
         description:
-          "Read field notes and behind-the-scenes stories from the team.",
+          "Baca artikel dan insight dari komunitas.",
       },
     ],
   },
   {
-    title: "Need a hand?",
+    title: "Butuh bantuan?",
     links: [
       {
         label: "FAQ",
         href: "/faq",
         description:
-          "Find quick answers about venues, passes, and accessibility.",
+          "Temukan jawaban tentang membership, event, dan komunitas.",
       },
       {
         label: "Venue",
         href: "/venue",
-        description: "Preview the Montreal Design Centre and plan your route.",
+        description: "Info lokasi event dan cara menuju venue.",
       },
       {
-        label: "Contact",
-        href: "/contact",
-        description: "Reach the team directly for bespoke support.",
+        label: "Kontak",
+        href: "/forms/contact",
+        description: "Hubungi tim BanuaDev langsung.",
       },
     ],
   },
@@ -61,7 +61,7 @@ const supportSections = [
           tag="p"
           variant="textXS"
           class="uppercase text-accent-500 lg:col-span-3 w-full"
-          >Page not found</Text
+          >Halaman tidak ditemukan</Text
         >
         <div class="lg:col-span-6 lg:-mt-4">
           <Text
@@ -71,16 +71,15 @@ const supportSections = [
             >404</Text
           >
           <Text tag="p" variant="textbase" class="text-base-600 text-balance">
-            We checked the archive, backstage, and every lightbox—this page is
-            no longer on the bill.
+            Maaf, halaman yang kamu cari tidak ditemukan. Mungkin sudah dipindah atau dihapus.
           </Text>
         </div>
         <div class="flex flex-col gap-2 lg:col-start-10 lg:col-span-3">
           <Button href="/" size="xs" variant="default" class="w-full"
-            >Back to home</Button
+            >Kembali ke Home</Button
           >
           <Button href="/schedule" size="xs" variant="outline" class="w-full"
-            >View schedule</Button
+            >Lihat Jadwal</Button
           >
         </div>
       </div>
