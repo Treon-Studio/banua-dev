@@ -6,24 +6,24 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 
 const ctaOptions = [
   {
-    href: "/register",
+    href: "/forms/register",
     cardClass: "bg-base-900/40",
-    label: "Remote access",
+    label: "Online Community",
     labelClass: "text-base-600",
-    title: "Join the virtual programme for free",
+    title: "Gabung komunitas online gratis",
     description:
-      "Register to receive the livestream, on-demand archive, and live Q&A threads connecting designers across time zones.",
-    actionLabel: "Begin registration ",
+      "Bergabung dengan Discord dan grup Telegram kami. Diskusi, berbagi resource, dan networking dengan developer lainnya.",
+    actionLabel: "Gabung Sekarang",
   },
   {
-    href: "/tickets",
+    href: "/schedule",
     cardClass: "bg-base-950/60",
-    label: "On-site experience",
+    label: "Offline Events",
     labelClass: "text-accent-400",
-    title: "Secure your seat in Montreal",
+    title: "Ikuti event dan meetup kami",
     description:
-      "Choose from day, studio, or team passes to access every stage, atelier, and curated gathering at Swiss Design Week.",
-    actionLabel: "Explore ticket options ",
+      "Datang ke meetup bulanan, workshop, dan hackathon. Bertemu langsung dengan sesama developer dan praktisi industri.",
+    actionLabel: "Lihat Jadwal Event",
   },
 ];
 ---
@@ -37,28 +37,27 @@ const ctaOptions = [
           variant="displayXL"
           class="font-display uppercase leading-tight text-accent-500"
         >
-          Attend on site or online
+          Gabung online atau offline
         </Text>
         <Text
           tag="p"
           variant="textSM"
           class="text-base-600 max-w-2xl mt-2 mix-blend-difference text-balance"
         >
-          Join us in Montreal for the tactile Swiss design experience, or stream
-          the programme from your studio. Pick the format that keeps your
-          practice in rhythm.
+          Ikuti komunitas kami secara online melalui Discord dan Telegram, atau datang
+          langsung ke event dan meetup kami. Pilih cara yang paling cocok untuk kamu.
         </Text>
       </div>
       <div
         class="flex flex-wrap items-center justify-between gap-4 lg:col-span-2"
       >
         <Text tag="p" variant="textXS" class="uppercase text-base-600">
-          Need a custom package?
+          Ada pertanyaan?
         </Text>
         <Text tag="p" variant="textXS" class="text-base-600">
-          Email the Dusk team at <a
+          Hubungi kami di <a
             class="underline"
-            href="mailto:email@example.com">tickets@dusk.design</a
+            href="mailto:hello@banuadev.com">hello@banuadev.com</a
           >
         </Text>
       </div>

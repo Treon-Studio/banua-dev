@@ -16,36 +16,36 @@ const numSpeakers = speakers.length;
 const highlights = [
   {
     number: numDays,
-    label: "Days",
-    description: `Celebrate ${numDays} days of Swiss design excellence. Join us for a curated program of talks, workshops, and exhibitions inspired by the clarity, order, and innovation of Swiss visual culture.`,
-    button: { label: "Full Program", href: "/schedule" },
+    label: "Events",
+    description: `Ikuti ${numDays} event komunitas kami. Mulai dari meetup, workshop, hingga hackathon yang dirancang untuk mengembangkan skill dan memperluas jaringan.`,
+    button: { label: "Lihat Jadwal", href: "/schedule" },
   },
   {
     number: sessions.length,
     label: "Sessions",
-    description: `Explore ${sessions.length} sessions on Swiss design, product thinking, and creative process. Attend talks, workshops, and panels led by industry leaders and visionaries.`,
-    button: { label: "See Sessions", href: "/schedule" },
+    description: `Eksplorasi ${sessions.length} sesi pembelajaran tentang berbagai topik teknologi. Dari web development, mobile, cloud, hingga AI/ML.`,
+    button: { label: "Lihat Sessions", href: "/schedule" },
     gradient: "",
   },
   {
     number: numSpeakers,
     label: "Speakers",
-    description: `Hear from ${numSpeakers} renowned designers, typographers, and creative leaders. Experience the perspectives that define and challenge the Swiss design tradition.`,
-    button: { label: "See Speakers", href: "/speakers" },
+    description: `Belajar dari ${numSpeakers} praktisi dan expert di bidangnya. Dapatkan insight langsung dari mereka yang sudah berpengalaman di industri.`,
+    button: { label: "Lihat Speakers", href: "/speakers" },
   },
 ];
 const eventHighlights = [
   {
-    title: "Morning keynotes",
-    description: "Theory & case studies",
+    title: "Meetup Bulanan",
+    description: "Sharing & networking",
   },
   {
-    title: "Afternoon ateliers",
-    description: "Hands-on critiques",
+    title: "Workshop Praktis",
+    description: "Hands-on learning",
   },
   {
-    title: "Night salons",
-    description: "Community & discourse",
+    title: "Online Community",
+    description: "Diskusi & kolaborasi",
   },
 ];
 ---
@@ -59,7 +59,7 @@ const eventHighlights = [
           variant="displaySM"
           class="text-balance text-accent-500 font-display uppercase leading-tight"
         >
-          A summit for swiss design
+          Komunitas untuk Developer
         </Text>
         <ul class="grid grid-cols-1 lg:grid-cols-9 mt-4">
           {

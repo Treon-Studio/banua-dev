@@ -13,9 +13,9 @@
 }
 
 @theme {
-  /* Typography */
-  --font-sans: "General Sans", sans-serif;
-  --font-display: "Clash Display", sans-serif;
+  /* Typography - All fonts use Departure Mono */
+  --font-sans: "Departure Mono", monospace;
+  --font-display: "Departure Mono", monospace;
   --font-mono: "Departure Mono", monospace;
   /* Black */
   --color-black: oklch(0.129 0 0);

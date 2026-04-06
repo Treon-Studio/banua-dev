@@ -20,6 +20,6 @@ export default defineConfig({
     skipInline: false,
     drafts: true
   },
-  site: 'https://yourdomain.com',
+  site: 'https://banuadev.pages.dev',
   integrations: [ sitemap(), mdx()]
 });
