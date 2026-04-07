@@ -107,13 +107,13 @@ const pageSections = [
       <Text
         tag="h1"
         variant="displayLG"
-        class="text-accent-500 font-display uppercase">Overview</Text
+        class="text-black font-display uppercase">Overview</Text
       >
       <div class="flex flex-col gap-12 mt-12">
         {
           pageSections.map((section) => (
             <div>
-              <Text tag="h3" variant="textLG" class="text-accent-500 ">
+              <Text tag="h3" variant="textLG" class="text-black ">
                 {section.title}
               </Text>
               <div class="grid grid-cols-2  mt-8 md:grid-cols-3 lg:grid-cols-6  text-base-900">
@@ -122,7 +122,7 @@ const pageSections = [
                     <Text
                       tag="p"
                       variant="textBase"
-                      class="text-accent-500 font-medium"
+                      class="text-black font-medium"
                     >
                       {column.category}
                     </Text>
@@ -132,7 +132,7 @@ const pageSections = [
                           <Text
                             tag="a"
                             variant="textSM"
-                            class="text-base-600 hover:text-accent-500 "
+                            class="text-base-600 hover:text-black "
                             href={link.href}
                           >
                             {link.text}

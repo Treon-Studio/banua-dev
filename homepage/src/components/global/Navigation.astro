@@ -29,20 +29,20 @@ const primaryLinks = [
     >
       <a
         href="/"
-        class="relative group flex items-center justify-center gap-3 text-accent-500 p-2 h-full bg-base-100 border-l border-black/10 border-dashed"
+        class="relative group flex items-center justify-center gap-3 text-black p-2 h-full bg-cream border-l border-black/10 border-dashed"
       >
         <CornerFrame />
         <Logo
-          class="text-sm uppercase text-accent-500 hover:text-accent-500 transition font-medium"
+          class="text-sm uppercase text-black hover:text-green transition font-medium"
         />
         <span class="sr-only">BanuaDev</span>
       </a>
       {
         primaryLinks.map((link) => (
-          <div class="hidden lg:flex p-2  h-full flex-col items-center justify-center text-center bg-base-100">
+          <div class="hidden lg:flex p-2  h-full flex-col items-center justify-center text-center bg-cream">
             <a
               href={link.href}
-              class="text-sm uppercase text-accent-500 hover:text-accent-500 transition font-medium"
+              class="text-sm uppercase text-black hover:text-green transition font-medium"
             >
               {link.label}
             </a>
@@ -50,7 +50,7 @@ const primaryLinks = [
         ))
       }
       <Search />
-      <div class="p-2 hidden lg:block bg-base-100 relative group">
+      <div class="p-2 hidden lg:block bg-cream relative group">
         <CornerFrame />
         <Button
           size="xs"
@@ -61,7 +61,7 @@ const primaryLinks = [
         </Button>
       </div>
       <div
-        class="lg:hidden ml-auto w-full p-2 bg-base-100 border-r border-dashed border-black/10"
+        class="lg:hidden ml-auto w-full p-2 bg-cream border-r border-dashed border-black/10"
       >
         <Button id="mobile-toggle" size="xs" variant="outline" class="w-full">
           Menu
@@ -72,7 +72,7 @@ const primaryLinks = [
   {/* Mobile Menu */}
   <div
     id="mobile-menu"
-    class="hidden fixed inset-0 z-50 text-accent-500 flex flex-col w-screen h-screen bg-base-100"
+    class="hidden fixed inset-0 z-50 text-black flex flex-col w-screen h-screen bg-cream"
   >
     <Wrapper class="border-b border-dashed border-black/10 w-full">
       <div
@@ -80,15 +80,15 @@ const primaryLinks = [
       >
         <a
           href="/"
-          class="relative group flex items-center justify-center gap-3 text-accent-500 p-2 h-full bg-base-100 border-l border-black/10 border-dashed"
+          class="relative group flex items-center justify-center gap-3 text-black p-2 h-full bg-cream border-l border-black/10 border-dashed"
         >
           <CornerFrame />
           <Logo
-            class="text-sm uppercase text-accent-500 hover:text-accent-500 transition font-medium"
+            class="text-sm uppercase text-black hover:text-green transition font-medium"
           />
           <span class="sr-only">BanuaDev</span>
         </a>
-        <div class="p-2 bg-base-100 w-full border-r border border-white/10">
+        <div class="p-2 bg-cream w-full border-r border border-black/10">
           <Button size="xs" variant="outline" id="mobile-close" class="w-full">
             Close
           </Button>
@@ -107,7 +107,7 @@ const primaryLinks = [
             <li class=" w-full">
               <a
                 href={link.href}
-                class="flex w-full font-medium uppercase items-center justify-center gap-3 text-accent-500 p-2 h-full bg-base-100 "
+                class="flex w-full font-medium uppercase items-center justify-center gap-3 text-black p-2 h-full bg-cream "
               >
                 {link.label}
               </a>

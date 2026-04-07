@@ -45,18 +45,18 @@
   --color-accent-900: #3A5110;
   --color-accent-950: #1D2908;
 
-  /* Base - Green scale from Cream (light) to Dark Green (dark) */
-  --color-base-50: #E6F5DC;
-  --color-base-100: #D4EABD;
-  --color-base-200: #A8D47A;
-  --color-base-300: #5A9A4A;
-  --color-base-400: #2D6B38;
-  --color-base-500: #1B3D28;
-  --color-base-600: #163220;
-  --color-base-700: #112719;
-  --color-base-800: #0C1E12;
-  --color-base-900: #0A180E;
-  --color-base-950: #050C07;
+  /* Base - Dark mode scale (low numbers = dark, high numbers = light) */
+  --color-base-50: #050C07;
+  --color-base-100: #0C1E12;
+  --color-base-200: #112719;
+  --color-base-300: #163220;
+  --color-base-400: #1B3D28;
+  --color-base-500: #2D6B38;
+  --color-base-600: #5A9A4A;
+  --color-base-700: #A8D47A;
+  --color-base-800: #D4EABD;
+  --color-base-900: #E6F5DC;
+  --color-base-950: #F5FDE8;
 
   /* Semantic colors */
   --color-cream: #E6F5DC;
