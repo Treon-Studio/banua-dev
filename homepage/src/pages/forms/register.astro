@@ -6,7 +6,7 @@ import Button from "@/components/fundations/elements/Button.astro";
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 ---
 
-<BaseLayout pageTitle="Register">
+<BaseLayout pageTitle="Daftar">
   <section>
     <Wrapper variant="standard" class="py-32">
       <div>
@@ -15,59 +15,42 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
           variant="displayMD"
           class="text-balance text-black font-display uppercase leading-tight"
         >
-          Join Swiss Design Week at BanuaDev
+          Gabung Komunitas BanuaDev
         </Text>
         <Text
           tag="p"
           variant="textBase"
           class="text-base-600 font-medium max-w-2xl mt-2 text-balance"
         >
-          Select the pass that matches your cadence: a free Virtual Pass for
-          live streaming, the Day Pass for focused on-site sessions, the two-day
-          Studio Pass, or the Team Residency for a full week in Montreal. Submit
-          the form and we will confirm availability within two business days.
+          Pilih membership yang sesuai: Community Member gratis untuk akses
+          online, atau Event Pass untuk ikut meetup dan workshop offline.
+          Isi form dan kami akan konfirmasi dalam 1-2 hari kerja.
         </Text>
       </div>
       <div class="grid lg:grid-cols-12 mt-8">
         <form
           class="bg-dark-green p-8 lg:col-span-4 space-y-8"
           method="post"
-          action="#_"
+          action="https://formsubmit.co/hello@banuadev.com"
           aria-labelledby="registration-title"
         >
           <h2 id="registration-title" class="sr-only">
-            Event registration form
+            Form registrasi member
           </h2>
 
-          <!-- First + Last name -->
-          <div class="grid gap-6 sm:grid-cols-2">
-            <div class="flex flex-col gap-2">
-              <label for="firstName" class="uppercase text-white text-xs tracking-wide"
-                >First name</label
-              >
-              <input
-                id="firstName"
-                type="text"
-                name="firstName"
-                required
-                autocomplete="given-name"
-                class="w-full bg-black/15 border-transparent px-4 py-3 h-11 text-xs text-white placeholder:text-base-50 focus:border-white/60 focus:outline-none"
-              />
-            </div>
-
-            <div class="flex flex-col gap-2">
-              <label for="lastName" class="uppercase text-white text-xs tracking-wide"
-                >Last name</label
-              >
-              <input
-                id="lastName"
-                type="text"
-                name="lastName"
-                required
-                autocomplete="family-name"
-                class="w-full bg-black/15 border-transparent px-4 py-3 h-11 text-xs text-white placeholder:text-base-50 focus:border-white/60 focus:outline-none"
-              />
-            </div>
+          <!-- Nama Lengkap -->
+          <div class="flex flex-col gap-2">
+            <label for="name" class="uppercase text-white text-xs tracking-wide"
+              >Nama Lengkap</label
+            >
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+              autocomplete="name"
+              class="w-full bg-black/15 border-transparent px-4 py-3 h-11 text-xs text-white placeholder:text-base-50 focus:border-white/60 focus:outline-none"
+            />
           </div>
 
           <!-- Email -->
@@ -85,69 +68,62 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
             />
           </div>
 
-          <!-- Company -->
+          <!-- No. WhatsApp -->
           <div class="flex flex-col gap-2">
-            <label for="company" class="uppercase text-white text-xs tracking-wide"
-              >Company or Studio</label
+            <label for="phone" class="uppercase text-white text-xs tracking-wide"
+              >No. WhatsApp</label
             >
             <input
-              id="company"
-              type="text"
-              name="company"
-              autocomplete="organization"
+              id="phone"
+              type="tel"
+              name="phone"
+              autocomplete="tel"
               class="w-full bg-black/15 border-transparent px-4 py-3 h-11 text-xs text-white placeholder:text-base-50 focus:border-white/60 focus:outline-none"
             />
           </div>
 
-          <!-- Role -->
+          <!-- Profesi -->
           <div class="flex flex-col gap-2">
-            <label for="role" class="uppercase text-white text-xs tracking-wide"
-              >Role</label
+            <label for="profession" class="uppercase text-white text-xs tracking-wide"
+              >Profesi / Pekerjaan</label
             >
             <input
-              id="role"
+              id="profession"
               type="text"
-              name="role"
-              autocomplete="organization-title"
+              name="profession"
               class="w-full bg-black/15 border-transparent px-4 py-3 h-11 text-xs text-white placeholder:text-base-50 focus:border-white/60 focus:outline-none"
             />
           </div>
 
-          <!-- Attendance -->
+          <!-- Membership -->
           <div class="flex flex-col gap-2">
-            <label for="attendance" class="uppercase text-white text-xs tracking-wide"
-              >Attendance preference</label
+            <label for="membership" class="uppercase text-white text-xs tracking-wide"
+              >Pilih Membership</label
             >
             <select
-              id="attendance"
-              name="attendance"
+              id="membership"
+              name="membership"
               required
               class="w-full bg-black/15 border-transparent px-4 py-3 h-11 text-xs text-white placeholder:text-base-50 focus:border-white/60 focus:outline-none"
             >
-              <option value="virtual">Virtual Pass — livestream access</option>
-              <option value="onsite-day">Day Pass — one on-site day</option>
-              <option value="onsite-studio">Studio Pass — two-day access</option
-              >
-              <option value="onsite-team">Team Residency — week-long</option>
+              <option value="community">Community Member — Gratis</option>
+              <option value="event">Event Pass — Rp 50K/event</option>
+              <option value="workshop">Workshop Pass — Rp 150K</option>
+              <option value="annual">Annual Member — Rp 500K/tahun</option>
             </select>
           </div>
 
-          <!-- Notes -->
+          <!-- Catatan -->
           <div class="flex flex-col gap-2">
             <label for="notes" class="uppercase text-white text-xs tracking-wide"
-              >Notes (access needs, team size, questions)</label
+              >Catatan (opsional)</label
             >
             <textarea
               id="notes"
               name="notes"
-              rows="5"
-              aria-describedby="notes-hint"
-              class="w-full bg-black/15 border-transparent px-4 py-3 h-11 text-xs text-white placeholder:text-base-50 focus:border-white/60 focus:outline-none"
+              rows="3"
+              class="w-full bg-black/15 border-transparent px-4 py-3 text-xs text-white placeholder:text-base-50 focus:border-white/60 focus:outline-none"
             ></textarea>
-            <p id="notes-hint" class="text-xs text-white">
-              You can include details about accessibility needs or group
-              registrations.
-            </p>
           </div>
 
           <!-- Consent + Submit -->
@@ -161,8 +137,7 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
                 class="mt-1 border-base-400 accent-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
               />
               <label for="consent" class="cursor-pointer">
-                I agree to receive event communications and logistics from the
-                BanuaDev team.
+                Saya setuju menerima info event dan update dari tim BanuaDev.
               </label>
             </div>
 
@@ -172,7 +147,7 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
               variant="muted"
               class="w-full mt-4 focus-visible:ring-2 focus-visible:ring-white/70"
             >
-              Submit registration
+              Daftar Sekarang
             </Button>
           </div>
         </form>
@@ -184,23 +159,20 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
               variant="textXL"
               class="font-display uppercase text-black"
             >
-              What happens next
+              Langkah Selanjutnya
             </Text>
             <ul
               role="list"
               class="space-y-4 text-base-600 list-decimal list-inside"
             >
               <li>
-                We review submissions daily and confirm your registration via
-                email.
+                Kami akan review pendaftaran dan konfirmasi via email dalam 1-2 hari.
               </li>
               <li>
-                On-site passes receive accommodation guidance and travel tips
-                tailored to your team.
+                Kamu akan diundang ke grup Discord/Telegram komunitas.
               </li>
               <li>
-                Virtual attendees get streaming credentials and a welcome kit
-                two weeks before the event.
+                Untuk event offline, kami akan kirim detail lokasi dan jadwal.
               </li>
             </ul>
             <div class="border-t border-white/10 pt-6">
@@ -209,19 +181,19 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
                 variant="textXS"
                 class="font-display uppercase text-black"
               >
-                Need assistance?
+                Ada pertanyaan?
               </Text>
               <Text tag="p" variant="textSM" class="text-base-600">
                 Email <a
                   class="underline text-base-600"
-                  href="mailto:tickets@banuadev.com">tickets@banuadev.com</a
-                > or call +0 (000) 123-4567 for concierge support.
+                  href="mailto:hello@banuadev.com">hello@banuadev.com</a
+                > atau hubungi via Instagram @banuadev.
               </Text>
               <Text tag="p" variant="textXS" class="mt-4 text-base-600">
-                Prefer to compare tiers first? Explore the <a
+                Lihat opsi membership di <a
                   class="underline"
-                  href="/tickets">tickets page</a
-                > for pricing and inclusions.
+                  href="/tickets">halaman membership</a
+                >.
               </Text>
             </div>
           </div>

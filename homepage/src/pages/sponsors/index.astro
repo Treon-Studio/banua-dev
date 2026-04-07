@@ -14,22 +14,22 @@ const tierMeta = {
   platinum: {
     label: "Platinum",
     description:
-      "Lead partners who shape the programme, host residencies, and support accessibility for the entire week.",
+      "Partner utama yang mendukung program komunitas, workshop, dan akses untuk semua member.",
   },
   gold: {
     label: "Gold",
     description:
-      "Strategic collaborators funding ateliers, installations, and special programming.",
+      "Kolaborator strategis yang mendanai event, workshop, dan program khusus.",
   },
   silver: {
     label: "Silver",
     description:
-      "Tool makers and studios powering workshops, prototyping labs, and night salons.",
+      "Perusahaan teknologi dan studio yang mendukung workshop dan meetup.",
   },
   bronze: {
     label: "Bronze",
     description:
-      "Community supporters who enable scholarships, travel bursaries, and emerging talent access.",
+      "Pendukung komunitas yang membantu beasiswa dan akses untuk developer pemula.",
   },
 };
 const groupedTiers = tierOrder.flatMap((tier) => {
@@ -52,7 +52,7 @@ const leadSponsor = sponsors.find(
   (sponsor) => sponsor.data.tier === "platinum"
 );
 const leadSponsorName = leadSponsor?.data.name;
-const tierSummary = `${totalSponsors} sponsors supporting Swiss Design Week`;
+const tierSummary = `${totalSponsors} sponsor mendukung BanuaDev`;
 ---
 
 <BaseLayout>
@@ -60,27 +60,27 @@ const tierSummary = `${totalSponsors} sponsors supporting Swiss Design Week`;
     <Wrapper variant="standard" class="py-32">
       <div>
         <Text tag="p" variant="textXS" class="uppercase text-base-600">
-          Partners in precision
+          Dukungan
         </Text>
         <Text
           tag="h1"
           variant="displayMD"
           class="text-balance text-black font-display uppercase leading-tight mt-8"
         >
-          Sponsors of BanuaDev
+          Sponsor BanuaDev
         </Text>
         <Text
           tag="p"
           variant="textBase"
           class="text-base-600 font-medium max-w-2xl mt-2 text-balance"
         >
-          {tierSummary}. From lead partners to community backers, these
-          organisations help us stage a week-long programme rooted in Swiss
-          design discipline and accessible to teams worldwide.
+          {tierSummary}. Dari partner utama hingga pendukung komunitas,
+          organisasi-organisasi ini membantu kami mengadakan program yang
+          bermanfaat untuk developer di Kalimantan Selatan.
         </Text>
       </div>
       <Text tag="p" variant="textXS" class="uppercase text-black mt-24">
-        Lead partner: {leadSponsorName}
+        Partner utama: {leadSponsorName}
       </Text>
       <div class="space-y-24 lg:space-y-48 mt-8">
         {
@@ -120,14 +120,14 @@ const tierSummary = `${totalSponsors} sponsors supporting Swiss Design Week`;
             variant="displaySM"
             class="font-display uppercase text-white"
           >
-            Become a sponsor
+            Jadi Sponsor
           </Text>
           <Text tag="p" variant="textSM" class="text-base-200 lg:text-balance">
-            Interested in supporting Swiss Design Week 2025? We craft bespoke
-            packages for toolmakers, product teams, and cultural institutions.
-            Email <a class="underline" href="mailto:partners@banuadev.com"
-              >partners@banuadev.com</a
-            > to start the conversation.
+            Tertarik mendukung komunitas developer Kalimantan Selatan? Kami
+            menawarkan paket sponsorship untuk perusahaan teknologi, startup,
+            dan organisasi. Email <a class="underline" href="mailto:hello@banuadev.com"
+              >hello@banuadev.com</a
+            > untuk info lebih lanjut.
           </Text>
         </div>
         <div
@@ -137,17 +137,17 @@ const tierSummary = `${totalSponsors} sponsors supporting Swiss Design Week`;
             size="sm"
             variant="default"
             class="w-fit"
-            href="/downloads/partners.pdf"
+            href="mailto:hello@banuadev.com"
           >
-            Sponsorship prospectus
+            Hubungi Kami
           </Button>
           <Button
             size="sm"
             variant="muted"
             class="w-fit"
-            href="mailto:partners@banuadev.com"
+            href="/forms/contact"
           >
-            Book a call
+            Info Sponsorship
           </Button>
         </div>
       </section>
