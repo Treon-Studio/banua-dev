@@ -17,32 +17,52 @@
   --font-sans: "Departure Mono", monospace;
   --font-display: "Departure Mono", monospace;
   --font-mono: "Departure Mono", monospace;
+
+  /*
+   * BanuaDev Color Palette
+   * Based on fitness brand design system
+   *
+   * #C8F135 — Bright Green → aksen, CTA, highlight
+   * #1B3D28 — Green → surface sekunder, card background
+   * #0C1E12 — Dark Green → background utama, hero, navbar
+   * #E6F5DC — Cream → light section, konten area
+   * #0A0A0A — Black → teks body di atas background terang
+   */
+
   /* Black */
-  --color-black: oklch(0.129 0 0);
-  /* Accent */
-  --color-accent-50: oklch(0.946 0.022 277.53);
-  --color-accent-100: oklch(0.881 0.048 274.94);
-  --color-accent-200: oklch(0.772 0.093 273.87);
-  --color-accent-300: oklch(0.654 0.148 271.8);
-  --color-accent-400: oklch(0.541 0.201 268.81);
-  --color-accent-500: oklch(0.454 0.219 266.27);
-  --color-accent-600: oklch(0.388 0.183 266.58);
-  --color-accent-700: oklch(0.323 0.145 266.9);
-  --color-accent-800: oklch(0.252 0.106 267.82);
-  --color-accent-900: oklch(0.169 0.058 269.23);
-  --color-accent-950: oklch(0.133 0.035 265.41);
-  /* Base */
-  --color-base-50: oklch(0.974 0.005 117.64);
-  --color-base-100: oklch(0.947 0.008 114.05);
-  --color-base-200: oklch(0.852 0.007 115.54);
-  --color-base-300: oklch(0.768 0.007 115.59);
-  --color-base-400: oklch(0.681 0.006 117.8);
-  --color-base-500: oklch(0.585 0.005 106.38);
-  --color-base-600: oklch(0.499 0.003 106.32);
-  --color-base-700: oklch(0.405 0.003 106.39);
-  --color-base-800: oklch(0.319 0.004 128.44);
-  --color-base-900: oklch(0.225 0.002 145.3);
-  --color-base-950: oklch(0.177 0.002 106.5);
+  --color-black: #0A0A0A;
+
+  /* Accent - Bright Green (#C8F135) scale */
+  --color-accent-50: #F5FDE8;
+  --color-accent-100: #E8FBC5;
+  --color-accent-200: #D8F78F;
+  --color-accent-300: #C8F135;
+  --color-accent-400: #B5E020;
+  --color-accent-500: #C8F135;
+  --color-accent-600: #A3C92B;
+  --color-accent-700: #7FA122;
+  --color-accent-800: #5C7919;
+  --color-accent-900: #3A5110;
+  --color-accent-950: #1D2908;
+
+  /* Base - Green scale from Cream (light) to Dark Green (dark) */
+  --color-base-50: #E6F5DC;
+  --color-base-100: #D4EABD;
+  --color-base-200: #A8D47A;
+  --color-base-300: #5A9A4A;
+  --color-base-400: #2D6B38;
+  --color-base-500: #1B3D28;
+  --color-base-600: #163220;
+  --color-base-700: #112719;
+  --color-base-800: #0C1E12;
+  --color-base-900: #0A180E;
+  --color-base-950: #050C07;
+
+  /* Semantic colors */
+  --color-cream: #E6F5DC;
+  --color-green: #1B3D28;
+  --color-dark-green: #0C1E12;
+  --color-bright-green: #C8F135;
 }
 
 :root {
