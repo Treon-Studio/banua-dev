@@ -1,14 +1,11 @@
-# Dusk
+# BanuaDev Homepage
 
-![Theme preview](https://lexingtonthemes.com/OpenGraph/dusk/twitter.png)
+Website komunitas developer Kalimantan Selatan.
 
-
-## Links
-- **Theme specs:** https://lexingtonthemes.com/templates/dusk  
-- **Documentation:** https://lexingtonthemes.com/documentation  
-- **Changelog:** https://lexingtonthemes.com/changelog/dusk  
-- **Support:** https://lexingtonthemes.com/legal/support/  
-- **Get the bundle:** https://lexingtonthemes.com  
+## Tech Stack
+- Astro 6.x
+- Tailwind CSS 4.x
+- MDX untuk konten
 
 ## Requirements
 - Node.js 18 or 20 (LTS recommended)
@@ -16,13 +13,13 @@
 
 ## Commands
 
-All commands are run from the root of the project, from a terminal:
-
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
 | `npm install`          | Install dependencies                             |
 | `npm run dev`          | Start local dev server                           |
 | `npm run build`        | Build production site to `./dist/`               |
-| `npm run preview`     | Preview the production build locally             |
-| `npm run astro ...`    | Run Astro CLI commands                           |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+| `npm run preview`      | Preview the production build locally             |
+
+## Deployment
+
+Website di-deploy ke Cloudflare Pages di https://banuadev.pages.dev
